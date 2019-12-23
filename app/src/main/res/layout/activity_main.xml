@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtgps"
+            android:layout_marginTop="200dp"
+            android:textColor="#12DB18"
+            android:textSize="24sp"
+            android:text="0.0/0.0"
+            android:textAlignment="center" android:background="#FCFCFC"/>
+    <Button
+            android:text="STOP UPDATE"
+            android:layout_below="@id/txtgps"
+            android:layout_width="150dp"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="30dp"
+            android:id="@+id/btn_stop_update"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="60dp" android:background="#F71605" android:enabled="false"
+            android:textSize="16sp"/>
+
+    <Button android:layout_width="150dp"
+            android:id="@+id/btn_Start_Up"
+            android:layout_height="30dp"
+            android:text="START UPDATE"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@id/txtgps"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp" android:background="#EC1506" android:textSize="16sp"/>
+</RelativeLayout>
